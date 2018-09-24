@@ -1,0 +1,19 @@
+<div *ngIf="hero">
+
+  <h2>{{hero.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{hero.id}}</div>
+  <div>
+    <label>Name:
+      <input [(ngModel)]="hero.name" placeholder="(superhero name, not alias name)"/>
+    </label>
+  <div>
+    <label>Color:
+      <input [(ngModel)]="hero.color" placeholder="like Red or Blue"/>
+    </label>
+  <div>
+    <label>Super Power:
+      <input [(ngModel)]="hero.superPower" placeholder="e.g., can make wind"/>
+    </label>
+  </div>
+
+</div>

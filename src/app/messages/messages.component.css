@@ -1,0 +1,10 @@
+.message-block {
+  background-color: #f8f8f8;
+  height: 400px;
+  overflow: scroll;
+  padding: 0 1em;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 400px;
+}
