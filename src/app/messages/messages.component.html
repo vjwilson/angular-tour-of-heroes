@@ -3,7 +3,7 @@
   <h2>Messages</h2>
   <button class="clear"
           (click)="messageService.clearAll()">Clear All</button>
-  <ul>
+  <ul class="message-block-list">
     <li *ngFor='let message of messageService.messages'>
       {{message}}
       <button class="clear"
