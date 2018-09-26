@@ -1,19 +1,27 @@
-<div *ngIf="hero">
+<div *ngIf="hero" class="hero-detail">
 
   <h2>{{hero.name | uppercase}} Details</h2>
   <div><span>id: </span>{{hero.id}}</div>
-  <div>
-    <label>Name:
+  <div class="form-element">
+    <label>
+      <span class="input-label">Name:</span>
       <input [(ngModel)]="hero.name" placeholder="(superhero name, not alias name)"/>
     </label>
-  <div>
-    <label>Color:
+  </div>
+  <div class="form-element">
+    <label>
+        <span class="input-label">Color:</span>
       <input [(ngModel)]="hero.color" placeholder="like Red or Blue"/>
     </label>
-  <div>
-    <label>Super Power:
+  </div>
+  <div class="form-element">
+    <label>
+        <span class="input-label">Super Power:</span>
       <input [(ngModel)]="hero.superPower" placeholder="e.g., can make wind"/>
     </label>
   </div>
-  <button (click)="goBack()">go back</button>
+  <div class="form-footer">
+    <button (click)="goBack()">go back</button>
+    <button (click)="save()">save</button>
+  </div>
 </div>

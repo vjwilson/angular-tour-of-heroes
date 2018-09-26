@@ -28,6 +28,9 @@
   background-color: #DDD;
   left: .1em;
 }
+.heroes li button {
+  float: right;
+}
 .heroes .text {
   position: relative;
   top: -3px;
